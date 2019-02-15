@@ -22,14 +22,14 @@
 
 ## 运行截图：
 ### v2.0
-<img src="https://github.com/Chentingz/SnifferUI/blob/master/v2.0/img/v2.0_interface_20190131.png" width = 75% height = 75%  />  
+<img src="v2.0/img/v2.0_interface_20190131.png" width = 75% height = 75%  />  
 
 ### v1.0
-<img src="https://github.com/Chentingz/SnifferUI/blob/master/v1.0/img/decode_dns.PNG" width = 75% height = 75%  />  
+<img src="v1.0/img/decode_dns.PNG" width = 75% height = 75%  />  
 
-<img src="https://github.com/Chentingz/SnifferUI/blob/master/v1.0/img/decode_dhcp.png" width = 75% height = 75%  />  
+<img src="v1.0/img/decode_dhcp.png" width = 75% height = 75%  />  
 
-<img src="https://github.com/Chentingz/SnifferUI/blob/master/v1.0/img/decode_http.png" width = 75% height = 75%  />
+<img src="v1.0/img/decode_http.png" width = 75% height = 75%  />
 
 ## 参考资料：
 * [一步一步开发sniffer（Winpcap+MFC）（一）工欲善其事，必先配环境——配置winpcap开发环境](https://blog.csdn.net/litingli/article/details/5950962)
