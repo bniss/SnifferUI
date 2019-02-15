@@ -306,7 +306,7 @@ UINT capture_thread(LPVOID pParam)
 		AfxMessageBox(_T("数据链路层不是以太网"), MB_OK);
 
 	
-	pcap_dumper_t *dumpfile;	
+	pcap_dumper_t *dumpfile = NULL;	
 	/* 打开堆文件
 	strcpy(filename, "pkt_cap");
 
@@ -332,7 +332,7 @@ void packet_handler(u_char *dumpfile, const struct pcap_pkthdr *header, const u_
 
 	/* 日志文件 */
 	
-	char *path = "E:\\Code\\Sniffer\\pkt_cap_log.txt";
+	char *path = "pkt_cap_log.txt";
 	FILE *save_file;
 	save_file = fopen(path,"a");	//以追加形式写入
 	
