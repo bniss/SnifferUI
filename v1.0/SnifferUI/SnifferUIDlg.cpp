@@ -257,6 +257,12 @@ void CSnifferUIDlg::OnStart()
 	pStart = GetDlgItem(IDC_START);
 	pStop = GetDlgItem(IDC_STOP);
 	pDevList = (CComboBox*)GetDlgItem(IDC_COMBO1);
+	int sel_index = pDevList->GetCurSel();			//获取选中设备的索引
+	if (sel_index == CB_ERR)
+	{
+		AfxMessageBox(_T("没有选中项"), MB_OK);
+		return;
+	}
 
 	pStart->EnableWindow(FALSE);
 	pStop->EnableWindow(TRUE);
@@ -2384,9 +2390,6 @@ void translateData(u_char *pkt_data, int offset, char *data1, char *data2, int d
 	}
 }
 
-
-
-
 /* 点击列表事件 */
 void CSnifferUIDlg::OnClickList1(NMHDR* pNMHDR, LRESULT* pResult) 
 {
@@ -2452,7 +2455,7 @@ void CSnifferUIDlg::OnClickList1(NMHDR* pNMHDR, LRESULT* pResult)
 
 	/* 建立以太网帧结点 */
 	decodeFrame(saddr, daddr, eth_type, &hIDItem);
-	
+	m_tree.Expand(hIDItem, TVE_EXPAND);
 	/* 建立ip结点 */
 	if(iph != NULL)
 	{
@@ -2514,6 +2517,7 @@ void CSnifferUIDlg::OnClickList1(NMHDR* pNMHDR, LRESULT* pResult)
 
 		decodeDHCP(ppkth->pkt_data, offset, &hIDItem);
 	}
+
 	*pResult = 0;
 }
 

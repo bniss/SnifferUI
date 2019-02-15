@@ -13,7 +13,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// 中文(简体，中国) resources
+// Chinese (Simplified, PRC) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
 LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
@@ -66,7 +66,6 @@ END
 // remains consistent on all systems.
 IDR_MAINFRAME           ICON                    "res\\SnifferUI.ico"
 
-
 /////////////////////////////////////////////////////////////////////////////
 //
 // Dialog
@@ -95,7 +94,7 @@ CAPTION "SnifferUI"
 FONT 9, "宋体", 0, 0, 0x1
 BEGIN
     COMBOBOX        IDC_COMBO1,0,15,235,131,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    CONTROL         "List4",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,0,46,603,132
+    CONTROL         "List4",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,0,46,603,132
     PUSHBUTTON      "开始",IDC_START,239,13,53,16,BS_BITMAP
     PUSHBUTTON      "结束",IDC_STOP,351,13,53,16,BS_BITMAP | WS_DISABLED
     CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_HSCROLL | WS_TABSTOP,0,187,282,182
@@ -175,14 +174,14 @@ END
 // AFX_DIALOG_LAYOUT
 //
 
-IDD_SNIFFERUI_DIALOG AFX_DIALOG_LAYOUT
+IDD_SNIFFERUI_DIALOG AFX_DIALOG_LAYOUT 
 BEGIN
-    0
+    0x0000
 END
 
-IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT 
 BEGIN
-    0
+    0x0000
 END
 
 
@@ -192,7 +191,6 @@ END
 //
 
 IDR_MANIFEST            RT_MANIFEST             "res\\windows.manifest"
-
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -204,7 +202,7 @@ BEGIN
     IDS_ABOUTBOX            "关于 SnifferUI(&A)..."
 END
 
-#endif    // 中文(简体，中国) resources
+#endif    // Chinese (Simplified, PRC) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
